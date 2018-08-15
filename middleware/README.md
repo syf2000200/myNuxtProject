@@ -8,3 +8,4 @@ https://nuxtjs.org/guide/routing#middleware
 
 **This directory is not required, you can delete it if you don't want to use it.**
 
+middleware 目录用于存放应用的中间件。
