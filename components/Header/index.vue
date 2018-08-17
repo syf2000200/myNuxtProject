@@ -33,3 +33,8 @@
     </div>
   </div>
 </template>
+
+<script>
+import './style.css'
+</script>
+
