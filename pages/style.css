@@ -20,3 +20,12 @@ html{
     align-items: center;
     text-align: center;
 }
+ol,ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #5e5e5e;
+}
