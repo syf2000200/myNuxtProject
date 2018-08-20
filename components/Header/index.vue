@@ -34,7 +34,6 @@
   </div>
 </template>
 
-
 <script>
 import HeaderLogo from '~/components/HeaderLogo'
 import './style.css'
