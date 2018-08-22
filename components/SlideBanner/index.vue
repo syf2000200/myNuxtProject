@@ -4,7 +4,7 @@
             <div>
                 <div class="swiper-wrapper">
                      <div class="swiper-slide">
-                        <img src="~/assets/images/index/banner01.jpg">
+                        <a href=""><img src="~/assets/images/index/banner01.jpg"></a>
                     </div> 
                 </div>
                 <div class="swiper-pagination swiper-pagination-bullets"></div>

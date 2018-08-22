@@ -17,6 +17,9 @@
           <div class="types-content">
             <div class="index-card-container course-card-container container">
               <a href="" class="course-card">
+                <div class="course-stat new">
+                  NEW
+                </div>
                 <div class="course-card-top hashadow">
                   <img class="course-banner" src="~assets/images/index/item01-01.jpg" alt="">
                   <div class="course-label">

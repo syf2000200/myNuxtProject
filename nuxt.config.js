@@ -35,10 +35,11 @@ module.exports = {
       }
     },
     // vendor: ['~/plugins/swiper.js']
+    vendor: ['axios']
   },
-  // plugin: [
-  //   { src: '~/plugins/swiper.js', ssr: false },
-  // ],
+  plugin: [
+    { src: '~plugins/swiper.js', ssr: false },
+  ],
   
   // // some nuxt config...
   // css: [

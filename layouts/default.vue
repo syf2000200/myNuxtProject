@@ -5,15 +5,19 @@
 </template>
 
 <style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+html{
+    font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;    word-spacing: 1px;
+    line-height: 20px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+}
+*{
+    margin: 0;
 }
 
 *, *:before, *:after {
@@ -48,6 +52,40 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+section.container {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+ol,ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #5e5e5e;
+}
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+a, button, input {
+    outline: 0;
 }
 </style>
 
