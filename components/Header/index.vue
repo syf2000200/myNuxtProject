@@ -1,6 +1,6 @@
 <template>
   <div class="Header">
-    <HeaderLogo/>
+    <Logo/>
     <nav>
       <ul>
         <li><a href="http://">免费课程</a></li>
@@ -26,9 +26,8 @@
         <li class="app-load"><a href="http://">下载APP</a></li>
         <li class="shop-cart"><a href="http://">购物车</a></li>
         <li class="header-signin">
-          <LoginLayerFrame/>
-          <a href="http://">登录</a>
-          <a href="http://">注册</a>
+          <nuxt-link to="/123" v-if="this.$store.state.isLogin">用户名</nuxt-link>
+          <LoginLayerFrame v-else />
         </li>
       </ul>
     </div>
@@ -36,13 +35,13 @@
 </template>
 
 <script>
-  import HeaderLogo from '~/components/HeaderLogo'
+  import Logo from '~/components/Logo'
   import LoginLayerFrame from '~/components/LoginLayerFrame'
   import './style.css'
 
   export default {
     components: {
-      HeaderLogo,
+      Logo,
       LoginLayerFrame,
     }
   }

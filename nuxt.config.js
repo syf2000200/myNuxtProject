@@ -16,7 +16,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: './components/loading.vue',
   /*
   ** Build configuration
   */
@@ -34,10 +34,13 @@ module.exports = {
         })
       }
     },
-    vendor: ['axios', 'element-ui']
+    vendor: ['axios', 'element-ui'],
   },
-  plugin: [
-    { src: '~plugins/swiper.js', ssr: false },
+  plugins: [
+    {
+      src: '~plugins/ElementUI',
+      ssr: true,
+    }
   ],
   
   // // some nuxt config...

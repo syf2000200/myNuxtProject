@@ -1,0 +1,46 @@
+.el-message-box{
+    width: 360px;
+}
+.el-button--text{
+    padding: 0 15px;
+    color: #71777d;
+    height: 72px;
+}
+.el-message-box__header{
+    padding: 0;
+}
+.el-message-box__btns button{
+    width: 300px;
+    box-sizing: border-box;
+    padding: 11px 32px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 24px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    -weibkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    color: #fff;
+    background-color: #f20d0d !important;
+    border-color: #f20d0d !important;
+    opacity: 1;
+}
+.el-message-box__headerbtn{
+    z-index: 99;
+}
+.el-message-box__btns{
+    text-align: center;
+}
+.el-tabs__item{
+    font-size: 16px;
+    width: 80px;
+    text-align: center;
+}
+.el-tabs__item.is-active, .el-tabs__item:hover{
+    color: #f01400;
+}
+.el-tabs__active-bar{
+    background-color: #f01400;
+}

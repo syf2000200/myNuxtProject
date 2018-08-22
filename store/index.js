@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 const store = () => new Vuex.Store({
     state: {
-        loginShow: false,
+        isLogin: false,
         listData: [
             {
                 key: 0,
