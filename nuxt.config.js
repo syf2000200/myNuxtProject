@@ -33,7 +33,16 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
-  }
+    },
+    // vendor: ['~/plugins/swiper.js']
+  },
+  // plugin: [
+  //   { src: '~/plugins/swiper.js', ssr: false },
+  // ],
+  
+  // // some nuxt config...
+  // css: [
+  //   'swiper/dist/css/swiper.css'
+  // ],
 }
 
