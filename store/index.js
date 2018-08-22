@@ -6,6 +6,20 @@ Vue.use(Vuex)
 const store = () => new Vuex.Store({
     state: {
         isLogin: false,
+        bannerData: [
+            {
+                key: 0,
+                imgUrl: 'images/index/banner01.jpg',
+            },
+            {
+                key: 1,
+                imgUrl: 'images/index/banner02.jpg',
+            },
+            {
+                key: 2,
+                imgUrl: 'images/index/banner03.jpg',
+            }
+        ],
         listData: [
             {
                 key: 0,

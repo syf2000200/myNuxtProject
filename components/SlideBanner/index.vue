@@ -1,12 +1,11 @@
 <template>
     <div class="g-banner-box">
-        <div>
-            <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                    <a href=""><img src="~static/images/index/banner01.jpg"></a>
-                </div> 
-            </div>
-            <div class="swiper-pagination swiper-pagination-bullets"></div>
+        <div class="block">
+            <el-carousel height="316px">
+                <el-carousel-item v-for="item in this.$store.state.bannerData" :key="item.key">
+                    <img :src="item.imgUrl" alt="">
+                </el-carousel-item>
+            </el-carousel>
         </div>
     </div>
 </template>
