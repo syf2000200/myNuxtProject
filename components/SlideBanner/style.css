@@ -42,7 +42,7 @@
     display: inline-block;
     width: 36px;
     height: 36px;
-    background: url(~assets/images/path_new.png) no-repeat;
+    background: url(~static/images/path_new.png) no-repeat;
     background-size: 100%;
     margin-top: 22px;
 }

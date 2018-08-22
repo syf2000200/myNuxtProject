@@ -34,16 +34,16 @@ module.exports = {
         })
       }
     },
-    // vendor: ['~/plugins/swiper.js']
-    vendor: ['axios']
+    vendor: ['axios', 'element-ui']
   },
   plugin: [
     { src: '~plugins/swiper.js', ssr: false },
   ],
   
   // // some nuxt config...
-  // css: [
-  //   'swiper/dist/css/swiper.css'
-  // ],
+  css: [
+    '~assets/css/main.css',
+    'element-ui/lib/theme-chalk/index.css'
+  ],
 }
 

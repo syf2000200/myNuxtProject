@@ -26,6 +26,7 @@
         <li class="app-load"><a href="http://">下载APP</a></li>
         <li class="shop-cart"><a href="http://">购物车</a></li>
         <li class="header-signin">
+          <LoginLayerFrame/>
           <a href="http://">登录</a>
           <a href="http://">注册</a>
         </li>
@@ -35,13 +36,15 @@
 </template>
 
 <script>
-import HeaderLogo from '~/components/HeaderLogo'
-import './style.css'
+  import HeaderLogo from '~/components/HeaderLogo'
+  import LoginLayerFrame from '~/components/LoginLayerFrame'
+  import './style.css'
 
-export default {
-  components: {
-    HeaderLogo
+  export default {
+    components: {
+      HeaderLogo,
+      LoginLayerFrame,
+    }
   }
-}
 </script>
 
