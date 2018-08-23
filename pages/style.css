@@ -7,7 +7,13 @@
     box-shadow: 0 2px 8px 0 rgba(7,17,27,.06);
 }
 
-
+.container-types {
+    width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 36px 0 48px;
+}
 .container-types .star-list .lead-list {
     width: 544px;
     margin: 38px auto 48px;

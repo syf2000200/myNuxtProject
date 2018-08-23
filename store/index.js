@@ -1,11 +1,34 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import mutations from './mutations'
 
 Vue.use(Vuex)
 
 const store = () => new Vuex.Store({
     state: {
         isLogin: false,
+        menuData: [
+            {
+                key: 0,
+                text: '前沿 / 区块链 / 人工智能',
+            },
+            {
+                key: 1,
+                text: '前端 / 小程序 / JS',
+            },
+            {
+                key: 2,
+                text: '后端 / JAVA / Python',
+            },
+            {
+                key: 3,
+                text: '移动 / Android / iOS',
+            },
+            {
+                key: 4,
+                text: '云计算 / 大数据 / 容器',
+            },
+        ],
         bannerData: [
             {
                 key: 0,
@@ -72,7 +95,8 @@ const store = () => new Vuex.Store({
                 imgUrl: 'images/index/item03-01.jpg',
             }
         ]
-    }
+    },
+    mutations
 })
 
 export default store

@@ -1,11 +1,4 @@
-.container-types {
-    width: 1152px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    padding: 36px 0 48px;
-}
-.container-types .types-title {
+.types-title {
     position: relative;
     font-size: 14px;
     color: #93999F;
@@ -13,7 +6,7 @@
     line-height: 36px;
     text-align: center;
 }
-.container-types .types-title .tit-icon {
+.types-title .tit-icon {
     display: inline-block;
     vertical-align: bottom;
     width: 56px;
@@ -21,25 +14,25 @@
     background: url(~static/images/icon.png) no-repeat;
     background-size: 100%;
 }
-.container-types .types-title .tit-icon-l {
+.types-title .tit-icon-l {
     margin-right: 24px;
 }
-.container-types .types-title span.icon-shizhan-l {
+.types-title span.icon-shizhan-l {
     background-position: center 0;
 }
-.container-types .types-title .tit-icon-r {
+.types-title .tit-icon-r {
     margin-left: 24px;
 }
-.container-types .types-title span.icon-shizhan-r {
+.types-title span.icon-shizhan-r {
     background-position: center -36px;
 }
-.container-types .types-title em {
+.types-title em {
     font-size: 20px;
     font-weight: 600;
     color: #4D555D;
     margin: 0 3px;
 }
-.container-types .types-content {
+.types-content {
     margin-top: 24px;
     margin-left: -18px;
 }
@@ -49,7 +42,7 @@
     position: relative;
     transition: .3s all linear;
 }
-.container-types .index-card-container {
+.index-card-container {
     float: left;
     margin-left: 18px;
     border-radius: 4px;

@@ -1,11 +1,5 @@
 <template>
-    <div class="bgfff">
-        <div class="container-types clearfix">
-            <h3 class="types-title">
-                <span class="tit-icon icon-shizhan-l tit-icon-l"></span>
-                <em>实</em>／<em>战</em>／<em>推</em>／<em>荐</em>
-                <span class="tit-icon icon-shizhan-r tit-icon-r"></span>
-            </h3>
+    
             <div class="types-content">
                 <div class="index-card-container course-card-container container" v-for="item in this.$store.state.listData" :key="item.key">
                     <a href="" class="course-card">
@@ -39,8 +33,6 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
 </template>
 
 <script>

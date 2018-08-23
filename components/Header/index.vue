@@ -23,8 +23,6 @@
     </div>
     <div class="login-area">
       <ul>
-        <li class="app-load"><a href="http://">下载APP</a></li>
-        <li class="shop-cart"><a href="http://">购物车</a></li>
         <li class="header-signin">
           <nuxt-link to="/123" v-if="this.$store.state.isLogin">用户名</nuxt-link>
           <LoginLayerFrame v-else />

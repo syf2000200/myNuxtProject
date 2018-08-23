@@ -1,9 +1,9 @@
 <template>
     <div class="menuContent">
-        <div class="item">
-            <a href="">
-            <span class="group">前沿 / 区块链 / 人工智能</span>
-            </a>
+        <div class="item" v-for="item in this.$store.state.menuData" :key="item.key">
+            <span class="group">
+                <nuxt-link to="/list">{{ item.text }}</nuxt-link>
+            </span>
         </div>
     </div>
 </template>
