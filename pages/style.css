@@ -14,50 +14,92 @@
     position: relative;
     padding: 36px 0 48px;
 }
-.container-types .star-list .lead-list {
-    width: 544px;
-    margin: 38px auto 48px;
+.recommend .tit-icon{
+    background-color: #feb454;
 }
-.container-types .star-list .lead-list dd {
-    width: 136px;
-    text-align: center;
+.top-line .tit-icon{
+    background-color: #9ccd71;
+}
+.tools .tit-icon{
+    background-color: #71b6cd;
+}
+
+
+/* 技术头条 */
+.top-line{
+    background-color: #f6f9fb;
+}
+.top-line-list dd{
+    float: left;
+    width: 566px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #ccc;
+    margin: 0 0 20px 18px;
+    background-color: #fff;
+}
+.top-line-list dd .warp{
+    padding: 25px 30px 25px 20px;
+}
+.top-line-list dd .warp > div{
     float: left;
 }
-.container-types .star-list .lead-list .lead-item-photo {
-    width: 56px;
-    height: 56px;
-    margin: 0 auto;
-    position: relative;
-}
-.container-types .star-list .lead-list .lead-item-photo img {
-    width: 100%;
-    height: 100%;
+.top-line-list dd .lead-item-photo img{
+    max-width: 50px;
+    max-height: 50px;
     border-radius: 50%;
-    box-shadow: 0 8px 16px 0 rgba(7,17,27,.1);
+    margin-right: 20px;
 }
-.container-types .star-list .lead-list .lead-item-photo span {
-    position: absolute;
-    width: 26px;
-    height: 18px;
-    top: -16px;
-    left: 15px;
-    background: url(~static/images/champion.png) no-repeat;
-    background-size: 100%;
+.top-line-list .lead-item-name{
+    margin-top: 5px;
 }
-.container-types .star-list .lead-list .lead-item-name {
-    font-size: 14px;
-    color: #07111B;
-    line-height: 16px;
-    margin-top: 8px;
-}
-.container-types .star-list .lead-list .lead-item-tit {
+.top-line-list .lead-item-tit{
     font-size: 12px;
-    color: #93999F;
-    font-weight: 400;
+    color: #ccc;
 }
-.container-types .types-title span.icon-star-l {
-    background-position: center -504px;
+.top-line-list dd .warp .lead-item-praise{
+    float: right;
 }
-.container-types .types-title span.icon-star-r {
-    background-position: center -540px;
+.top-line-list .lead-item-praise s{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 10px;
+}
+.top-line-list .lead-item-praise span{
+    font-size: 12px;
+    color: #999;
+}
+
+/* 工具推荐 */
+.tools .types-content dd{
+    float: left;
+    width: 216px;
+    margin: 0 0 20px 18px;
+}
+.tools .types-content dd .warp div{
+    width: 216px;
+    height: 120px;
+    position: relative;
+    border-radius: 8px;
+}
+.tools .types-content dd .warp span{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.tools .types-content dd .warp p{
+    padding: 16px;
+    font-size: 12px;
+    color: #999;
+}
+.tools .types-content dd img{
+    max-width: 216px;
+    max-height: 120px;
 }

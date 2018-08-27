@@ -87,7 +87,79 @@ const state = {
             isNew: true,
             imgUrl: 'images/index/item03-01.jpg',
         }
-    ]
+    ],
+    topData: [
+        {
+            key: 0,
+            text: '[译]Web应用架构入门之11个基本要素',
+            imgUrl: 'images/index/item03-01.jpg',
+            url: 'blog.fundebug.com',
+            praise: 2323,
+        },
+        {
+            key: 1,
+            text: '[译]Web应用架构入门之11个基本要素',
+            imgUrl: 'images/index/item03-01.jpg',
+            url: 'blog.fundebug.com',
+            praise: 2323,
+        },
+        {
+            key: 2,
+            text: '[译]Web应用架构入门之11个基本要素',
+            imgUrl: 'images/index/item03-01.jpg',
+            url: 'blog.fundebug.com',
+            praise: 2323,
+        },
+        {
+            key: 3,
+            text: '[译]Web应用架构入门之11个基本要素',
+            imgUrl: 'images/index/item03-01.jpg',
+            url: 'blog.fundebug.com',
+            praise: 2323,
+        },
+        {
+            key: 4,
+            text: '[译]Web应用架构入门之11个基本要素',
+            imgUrl: 'images/index/item03-01.jpg',
+            url: 'blog.fundebug.com',
+            praise: 2323,
+        },
+        {
+            key: 5,
+            text: '[译]Web应用架构入门之11个基本要素',
+            imgUrl: 'images/index/item03-01.jpg',
+            url: 'blog.fundebug.com',
+            praise: 2323,
+        },
+        {
+            key: 6,
+            text: '[译]Web应用架构入门之11个基本要素',
+            imgUrl: 'images/index/item03-01.jpg',
+            url: 'blog.fundebug.com',
+            praise: 2323,
+        },
+        {
+            key: 7,
+            text: '[译]Web应用架构入门之11个基本要素',
+            imgUrl: 'images/index/item03-01.jpg',
+            url: 'blog.fundebug.com',
+            praise: 2323,
+        },
+        {
+            key: 8,
+            text: '[译]Web应用架构入门之11个基本要素',
+            imgUrl: 'images/index/item03-01.jpg',
+            url: 'blog.fundebug.com',
+            praise: 2323,
+        },
+        {
+            key: 9,
+            text: '[译]Web应用架构入门之11个基本要素',
+            imgUrl: 'images/index/item03-01.jpg',
+            url: 'blog.fundebug.com',
+            praise: 2323,
+        },
+    ],
 }
 
 export default state

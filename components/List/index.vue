@@ -1,6 +1,6 @@
 <template>
     
-            <div class="types-content">
+            <div class="types-content clearfix">
                 <div class="index-card-container course-card-container container" v-for="item in this.$store.state.listData" :key="item.key">
                     <a href="" class="course-card">
                     <div class="course-stat new" v-if="item.isNew">

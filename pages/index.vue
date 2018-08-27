@@ -6,65 +6,66 @@
 			<!-- BANNER -->
 			<Banner/>
 			<!-- 实战推荐 -->
-			<div class="bgfff">
+			<div class="bgfff recommend">
 				<div class="container-types clearfix">
 					<h3 class="types-title">
-						<span class="tit-icon icon-shizhan-l tit-icon-l"></span>
 						<em>实</em>／<em>战</em>／<em>推</em>／<em>荐</em>
 						<span class="tit-icon icon-shizhan-r tit-icon-r"></span>
 					</h3>
 					<List/>
 				</div>
 			</div>
-			<!-- 全明星模块 -->
-			<div class="bgfff">
+			<!-- 技术头条 -->
+			<div class="bgfff top-line">
 				<div class="container-types clearfix">
 					<h3 class="types-title">
-					<span class="tit-icon icon-star-l tit-icon-l"></span>
-					<em>吊</em>／<em>炸</em>／<em>天</em>／<em>全</em>／<em>明</em>／<em>星</em>
-					<span class="tit-icon icon-star-r tit-icon-r"></span>
+						<span class="tit-icon icon-star-l tit-icon-l"></span>
+						<em>技</em>／<em>术</em>／<em>头</em>／<em>条</em>
+						<span class="tit-icon icon-star-r tit-icon-r"></span>
 					</h3>
-					<div class="star-list clearfix">
+
+					<div class="types-content top-line-list clearfix">
 						<dl class="lead-list clearfix js-lead-list">
-							<dd>
-								<div class="lead-item-photo">
-									<a href="">
-									<img src="~static/images/qwe.jpg" alt="">
-									</a>
-									<span class="purple"></span>
+							<dd v-for="item in this.$store.state.topData" :key="item.key">
+								<div class="warp clearfix">
+									<div class="lead-item-photo">
+										<a href="">
+											<img :src="item.imgUrl" alt="">
+										</a>
+									</div>
+									<div class="lead-item-text">
+										<p class="lead-item-name ellipsis">{{ item.text }}</p>
+										<p class="lead-item-tit">{{ item.url }}</p>
+									</div>
+									<div class="lead-item-praise">
+										<s></s>
+										<span>2365</span>
+									</div>
 								</div>
-								<p class="lead-item-name ellipsis">幸运的小叶子</p>
-								<p class="lead-item-tit">风骚课程学霸</p>
 							</dd>
-							<dd>
-								<div class="lead-item-photo">
-									<a href="">
-									<img src="~static/images/qwe.jpg" alt="">
-									</a>
-									<span class="purple"></span>
+						</dl>
+					</div>
+
+				</div>
+			</div>
+			<!-- 工具推荐 -->
+			<div class="bgfff tools">
+				<div class="container-types clearfix">
+					<h3 class="types-title">
+						<em>工</em>／<em>具</em>／<em>推</em>／<em>荐</em>
+						<span class="tit-icon icon-shizhan-r tit-icon-r"></span>
+					</h3>
+					
+					<div class="types-content clearfix">
+						<dl>
+							<dd v-for="item in this.$store.state.toolsData" :key="item.key">
+								<div class="warp">
+									<div>
+										<img :src="item.imgUrl" alt="">
+										<span>{{ item.tip }}</span>
+									</div>
+									<p>{{ item.text }}</p>
 								</div>
-								<p class="lead-item-name ellipsis">幸运的小叶子</p>
-								<p class="lead-item-tit">风骚课程学霸</p>
-							</dd>
-							<dd>
-							<div class="lead-item-photo">
-								<a href="">
-								<img src="~static/images/qwe.jpg" alt="">
-								</a>
-								<span class="purple"></span>
-							</div>
-							<p class="lead-item-name ellipsis">幸运的小叶子</p>
-							<p class="lead-item-tit">风骚课程学霸</p>
-							</dd>
-							<dd>
-							<div class="lead-item-photo">
-								<a href="">
-								<img src="~static/images/qwe.jpg" alt="">
-								</a>
-								<span class="purple"></span>
-							</div>
-							<p class="lead-item-name ellipsis">幸运的小叶子</p>
-							<p class="lead-item-tit">风骚课程学霸</p>
 							</dd>
 						</dl>
 					</div>
@@ -73,6 +74,7 @@
 		</div>
 		<!-- FOOTER -->
 		<Footer/>
+		<!-- TOPBAR -->
 		<Topbar/>
 	</section>
 </template>

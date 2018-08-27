@@ -9,28 +9,20 @@
 .types-title .tit-icon {
     display: inline-block;
     vertical-align: bottom;
-    width: 56px;
-    height: 36px;
-    background: url(~static/images/icon.png) no-repeat;
-    background-size: 100%;
-}
-.types-title .tit-icon-l {
-    margin-right: 24px;
-}
-.types-title span.icon-shizhan-l {
-    background-position: center 0;
-}
-.types-title .tit-icon-r {
-    margin-left: 24px;
-}
-.types-title span.icon-shizhan-r {
-    background-position: center -36px;
+    width: 100px;
+    height: 12px;
+    background-color: #feb454;
+    position: absolute;
+    bottom: 5px;
+    left: 46%;
 }
 .types-title em {
     font-size: 20px;
     font-weight: 600;
     color: #4D555D;
     margin: 0 3px;
+    position: relative;
+    z-index: 10;
 }
 .types-content {
     margin-top: 24px;
