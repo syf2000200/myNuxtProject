@@ -26,7 +26,7 @@
 
 					<div class="types-content top-line-list clearfix">
 						<dl class="lead-list clearfix js-lead-list">
-							<dd v-for="item in this.$store.state.topData" :key="item.key">
+							<dd v-for="item in this.$store.state.home.topData" :key="item.key">
 								<div class="warp clearfix">
 									<div class="lead-item-photo">
 										<a href="">
@@ -58,12 +58,58 @@
 					
 					<div class="types-content clearfix">
 						<dl>
-							<dd v-for="item in this.$store.state.toolsData" :key="item.key">
+							<dd v-for="item in this.$store.state.home.toolsData" :key="item.key">
 								<div class="warp">
 									<div>
 										<img :src="item.imgUrl" alt="">
 										<span>{{ item.tip }}</span>
 									</div>
+									<p>{{ item.text }}</p>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- 框架聚焦 -->
+			<div class="bgfff stack">
+				<div class="container-types clearfix">
+					<h3 class="types-title">
+						<em>框</em>／<em>架</em>／<em>聚</em>／<em>焦</em>
+						<span class="tit-icon icon-shizhan-r tit-icon-r"></span>
+					</h3>
+					
+					<div class="types-content clearfix">
+						<dl>
+							<dd v-for="item in this.$store.state.home.stackData" :key="item.key">
+								<div class="warp">
+									<div>
+										<img :src="item.imgUrl" alt="">
+									</div>
+									<p><b>{{ item.title }}</b></p>
+									<p>{{ item.text }}</p>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- 活动 -->
+			<div class="bgfff stack">
+				<div class="container-types clearfix">
+					<h3 class="types-title">
+						<em>框</em>／<em>架</em>／<em>聚</em>／<em>焦</em>
+						<span class="tit-icon icon-shizhan-r tit-icon-r"></span>
+					</h3>
+					
+					<div class="types-content clearfix">
+						<dl>
+							<dd v-for="item in this.$store.state.home.stackData" :key="item.key">
+								<div class="warp">
+									<div>
+										<img :src="item.imgUrl" alt="">
+									</div>
+									<p><b>{{ item.title }}</b></p>
 									<p>{{ item.text }}</p>
 								</div>
 							</dd>

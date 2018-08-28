@@ -81,7 +81,8 @@
     width: 216px;
     height: 120px;
     position: relative;
-    border-radius: 8px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .tools .types-content dd .warp span{
     position: absolute;
@@ -102,4 +103,33 @@
 .tools .types-content dd img{
     max-width: 216px;
     max-height: 120px;
+}
+
+/* 框架聚焦 */
+.stack{
+    background: #f6f9fb;
+}
+.stack dd{
+    float: left;
+    width: 216px;
+    height: 270px;
+    padding: 8px;
+    margin: 0 0 18px 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ebebeb;
+    background-color: #fff;
+}
+.stack dd img{
+    max-width: 200px;
+    max-height: 160px;
+}
+.stack dd p{
+    font-size: 12px;
+    color: #999999;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.stack dd p b{
+    font-size: 14px;
+    color: #333333;
 }
