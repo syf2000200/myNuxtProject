@@ -26,7 +26,7 @@
 
 					<div class="types-content top-line-list clearfix">
 						<dl class="lead-list clearfix js-lead-list">
-							<dd v-for="item in this.$store.state.home.topData" :key="item.key">
+							<dd v-for="(item, index) in topData" :key="index">
 								<div class="warp clearfix">
 									<div class="lead-item-photo">
 										<a href="">
@@ -58,7 +58,7 @@
 					
 					<div class="types-content clearfix">
 						<dl>
-							<dd v-for="item in this.$store.state.home.toolsData" :key="item.key">
+							<dd v-for="(item, index) in toolsData" :key="index">
 								<div class="warp">
 									<div>
 										<img :src="item.imgUrl" alt="">
@@ -81,7 +81,7 @@
 					
 					<div class="types-content clearfix">
 						<dl>
-							<dd v-for="item in this.$store.state.home.stackData" :key="item.key">
+							<dd v-for="(item, index) in stackData" :key="index">
 								<div class="warp">
 									<div>
 										<img :src="item.imgUrl" alt="">
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 			<!-- 活动 -->
-			<div class="bgfff stack">
+			<!-- <div class="bgfff stack">
 				<div class="container-types clearfix">
 					<h3 class="types-title">
 						<em>框</em>／<em>架</em>／<em>聚</em>／<em>焦</em>
@@ -104,7 +104,7 @@
 					
 					<div class="types-content clearfix">
 						<dl>
-							<dd v-for="item in this.$store.state.home.stackData" :key="item.key">
+							<dd v-for="(item, index) in stackData" :key="index">
 								<div class="warp">
 									<div>
 										<img :src="item.imgUrl" alt="">
@@ -116,7 +116,7 @@
 						</dl>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<!-- FOOTER -->
 		<Footer/>
@@ -126,6 +126,7 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex'
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
 import Banner from '~/components/Banner'
@@ -134,13 +135,20 @@ import List from '~/components/List'
 import './style.css'
 
 export default {
-  components: {
-    Header,
-    Banner,
-    Footer,
-    Topbar,
-    List,
-  }
+	components: {
+		Header,
+		Banner,
+		Footer,
+		Topbar,
+		List,
+	},
+	computed: {
+		...mapState({
+			topData: state => state.Home.topData,
+			toolsData: state => state.Home.toolsData,
+			stackData: state => state.Home.stackData,
+		})
+	}
 }
 </script>
 

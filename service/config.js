@@ -1,3 +1,10 @@
+/**
+ *  Created by 2018/8/24
+ *  @author: sunyafei
+ *  @description: axios默认配置文件
+ *  @param:
+ */
+
 export default {
     //自定义请求头
     headers: {
@@ -12,4 +19,5 @@ export default {
     withCredentials: true,
     //相应的数据格式
     responseType: 'json',
+    baseURL: 'http://10.1.72.79:18080'
 }

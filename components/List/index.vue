@@ -1,7 +1,7 @@
 <template>
     
             <div class="types-content clearfix">
-                <div class="index-card-container course-card-container container" v-for="(item, index) in this.$store.state.home.listData" :key="index">
+                <div class="index-card-container course-card-container container" v-for="(item, index) in listData" :key="index">
                     <a href="" class="course-card">
                     <div class="course-stat new" v-if="item.isNew">
                         NEW
@@ -15,19 +15,14 @@
                     <div class="course-card-content">
                         <h3 class="course-card-name">{{ item.text }}</h3>
                         <div class="course-card-bottom">
-                        <div class="course-card-info">
-                            <span>{{ item.type }}</span>
-                            <span>{{ item.level }}</span>
-                            <span><i class="icon-set_sns"></i>{{ item.num }}</span>
-                            <span class="course-star-box">
-                            <i class="icon-star2 on"></i>
-                            <i class="icon-star2 on"></i>
-                            <i class="icon-star2 on"></i>
-                            <i class="icon-star2 on"></i>
-                            <i class="icon-star2 on"></i>
-                            </span>
-                        </div>
-                        <div class="course-card-price">￥{{ item.price }}</div>
+                            <div class="course-card-info">
+                                <span>{{ item.type }}</span>
+                                <span>{{ item.level }}</span>
+                                <span><i class="icon-set_sns"></i>{{ item.num }}</span>
+                                <span class="course-star-box">
+                                    <Rate :value="item.rateValue"/>
+                                </span>
+                            </div>
                         </div>
                     </div>
                     </a>
@@ -36,5 +31,18 @@
 </template>
 
 <script>
+    import { mapState, mapMutations } from 'vuex'
+    import Rate from '~/components/Rate'
     import './style.css'
+
+    export default {
+        components: {
+            Rate,
+        },
+        computed: {
+            ...mapState({
+                listData: state => state.Home.listData,
+            })
+        }
+    }
 </script>

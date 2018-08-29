@@ -1,5 +1,5 @@
 /**
- *  Created by 2018/8/24
+ *  Created by 2018/8/29
  *  @author: sunyafei
  *  @description: 
  *  @param:
@@ -7,7 +7,7 @@
 
 const mutations = {
     increment (state) {
-        // state.isLogin = false
+        state.isLogin = false
     }
 }
 

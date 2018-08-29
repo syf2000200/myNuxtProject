@@ -1,5 +1,5 @@
 /**
- *  Created by 2018/8/24
+ *  Created by 2018/8/29
  *  @author: sunyafei
  *  @description: 
  *  @param:
@@ -8,9 +8,9 @@
 import state from './state'
 import mutations from './mutations'
 
-const home = {
+const common = {
     state,
-    mutations
+    mutations,
 }
 
-export default home
+export default common

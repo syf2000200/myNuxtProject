@@ -1,6 +1,6 @@
 <template>
     <div class="menuContent">
-        <div class="item" v-for="(item, index) in this.$store.state.home.menuData" :key="index">
+        <div class="item" v-for="(item, index) in menuData" :key="index">
             <span class="group">
                 <nuxt-link to="/list">{{ item.text }}</nuxt-link>
             </span>
@@ -9,5 +9,14 @@
 </template>
 
 <script>
+    import { mapState, mapMutations } from 'vuex'
     import './style.css'
+
+    export default {
+        computed: {
+            ...mapState({
+                menuData: state => state.Home.menuData
+            })
+        }
+    }
 </script>

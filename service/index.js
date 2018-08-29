@@ -1,3 +1,10 @@
+/**
+ *  Created by 2018/8/24
+ *  @author: sunyafei
+ *  @description: axios处理函数封装
+ *  @param:
+ */
+
 import axios from 'axios'
 import qs from 'qs'
 import config from './config'

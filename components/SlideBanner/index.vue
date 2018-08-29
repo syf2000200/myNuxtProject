@@ -2,7 +2,7 @@
     <div class="g-banner-box">
         <div class="block">
             <el-carousel height="316px">
-                <el-carousel-item v-for="(item, index) in this.$store.state.home.bannerData" :key="index">
+                <el-carousel-item v-for="(item, index) in bannerData" :key="index">
                     <img :src="item.imgUrl" alt="">
                 </el-carousel-item>
             </el-carousel>
@@ -11,5 +11,14 @@
 </template>
 
 <script>
+    import { mapState, mapMutations } from 'vuex'
     import './style.css'
+
+    export default {
+        computed: {
+            ...mapState({
+                bannerData: state => state.Home.bannerData
+            })
+        }
+    }
 </script>

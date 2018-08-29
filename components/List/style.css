@@ -96,9 +96,13 @@
     margin-top: 8px;
     font-weight: 400;
 }
-.course-card-container .course-card-content .course-card-info span {
+.course-card-container .course-card-content .course-card-info>span {
     display: inline-block;
     margin-right: 12px;
+}
+.course-card-container .course-card-content .course-card-info span i{
+    font-size: 12px;
+    margin-right: 4px;
 }
 .course-card-container .course-card-content .course-card-info .icon-set_sns {
     margin-right: 2px;

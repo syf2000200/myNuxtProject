@@ -40,52 +40,59 @@
 </template>
 
 <script>
-    import './style.css'
+/**
+ *  Created by 2018/8/22
+ *  @author: sunyafei
+ *  @description: 登录弹层内容
+ *  @param:
+ */
 
-    export default {
-        data() {
-            return {
-                activeName: 'login',
-                ruleForm: {
-                    name: '',
-                    region: '',
-                    delivery: false,
-                    type: [],
-                    resource: '',
-                    desc: ''
-                },
-                rules: {
-                    name: [
-                        { required: true, message: '请输入正确的邮箱或手机号', trigger: 'blur' },
-                        { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
-                    ],
-                    password: [
-                        { required: true, message: '请输入密码', trigger: 'blur' },
-                        { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
-                    ],
-                    type: [
-                        { type: 'array', required: true, message: '请至少选择一个活动性质', trigger: 'change' }
-                    ],
-                    identifying: [
-                        { required: true, message: '验证码错误', trigger: 'blur' }
-                    ]
-                }
-            };
+import './style.css'
+
+export default {
+    data() {
+        return {
+            activeName: 'login',
+            ruleForm: {
+                name: '',
+                region: '',
+                delivery: false,
+                type: [],
+                resource: '',
+                desc: ''
+            },
+            rules: {
+                name: [
+                    { required: true, message: '请输入正确的邮箱或手机号', trigger: 'blur' },
+                    { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+                ],
+                password: [
+                    { required: true, message: '请输入密码', trigger: 'blur' },
+                    { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+                ],
+                type: [
+                    { type: 'array', required: true, message: '请至少选择一个活动性质', trigger: 'change' }
+                ],
+                identifying: [
+                    { required: true, message: '验证码错误', trigger: 'blur' }
+                ]
+            }
+        };
+    },
+    methods: {
+        handleClick(tab, event) {
+            console.log(tab, event);
         },
-        methods: {
-            handleClick(tab, event) {
-                console.log(tab, event);
-            },
-            submitForm(formName) {
-                this.$refs[formName].validate((valid) => {
-                    if (valid) {
-                        alert('submit!');
-                    } else {
-                        console.log('error submit!!');
-                        return false;
-                    }
-                });
-            },
-        }
-    };
+        submitForm(formName) {
+            this.$refs[formName].validate((valid) => {
+                if (valid) {
+                    alert('submit!');
+                } else {
+                    console.log('error submit!!');
+                    return false;
+                }
+            });
+        },
+    }
+};
 </script>
