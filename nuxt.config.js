@@ -48,6 +48,13 @@ module.exports = {
 		'~assets/css/main.css',
 		'element-ui/lib/theme-chalk/index.css'
 	],
+	modules: [
+		'@nuxtjs/axios',
+		'@nuxtjs/proxy',
+	],
+	axios: {
+		proxy: true
+	},
 	proxy: {
 		'/api': {
 		  	target: 'http://10.1.72.79:18080',
