@@ -19,5 +19,4 @@ export default {
     withCredentials: true,
     //相应的数据格式
     responseType: 'json',
-    baseURL: 'http://10.1.72.79:18080'
 }

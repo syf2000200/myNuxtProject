@@ -8,8 +8,14 @@
 import axios from 'axios'
 import qs from 'qs'
 import config from './config'
+const api = '/api'
 
 const service = axios.create(config)
+
+// 判断是路由跳转还是 axios 请求
+if (process.server) {
+    config.baseURL = `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}`
+}
 
 //POST传参序列化
 service.interceptors.request.use(
@@ -32,32 +38,27 @@ service.interceptors.response.use(
     }
 )
 
+export function fetch(url, params, method = 'GET') {
+    return new Promise((resolve, reject) => {
+        if(method == 'GET') {
+            service({
+                method: 'get', 
+                url,
+                params,
+            })
+        } else {
+            service({
+                method: 'post', 
+                url,
+                params,
+            })
+        }
+    })
+}
+
 export default {
-    //post方法
-    post (url ,data) {
-        console.log('post请求地址是', url)
-        return service({
-            method: 'post',
-            url,
-            params: data,
-        })
-    },
-    //get方法
-    get (url, data) {
-        console.log('get请求地址是', url)
-        return service({
-            method: 'get',
-            url,
-            params: data,
-        })
-    },
-    //delete方法
-    delete (url, data) {
-        console.log('移除请求地址', url)
-        return service({
-            method: 'delete',
-            url,
-            params: data,
-        })
+    mineBaseMsgApi() {
+        console.log('进入api.js')
+        return fetch(`${api}/video/searchConditionList`)
     }
 }

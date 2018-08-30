@@ -5,9 +5,16 @@
  *  @param:
  */
 
+ import types from '~/service/type'
+
 const mutations = {
-    increment (state) {
-        state.isLogin = false
+    [types.GET_BASE_API](state, res) {
+        console.log('进入mutation')
+        state.getMineBaseMsg = {
+            ...state.getMineBaseMsg,
+            msg: res.data.msg,
+        }
+        console.log('进入mutations修改state成功')
     }
 }
 

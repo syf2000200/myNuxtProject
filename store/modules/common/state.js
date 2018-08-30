@@ -7,6 +7,7 @@
 
 const state = {
     isLogin: false,
+    getMineBaseMsg: null,
 }
 
 export default state
