@@ -83,6 +83,6 @@ async function fetch(url, params, method = 'GET') {
 export default {
     mineBaseMsgApi() {
         console.log('进入api.js')
-        return fetch(`${api}/video/videoList`, {currentPage: 1, pageSize: 10}, 'POST')
+        return fetch(`${api}/website/categoryList`, 'GET')
     }
 }

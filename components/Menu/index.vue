@@ -2,7 +2,7 @@
     <div class="menuContent">
         <div class="item" v-for="(item, index) in menuData" :key="index">
             <span class="group">
-                <nuxt-link to="/list">{{ item.directionName }}</nuxt-link>
+                <nuxt-link to="/list">{{ item.name }}</nuxt-link>
             </span>
         </div>
     </div>
