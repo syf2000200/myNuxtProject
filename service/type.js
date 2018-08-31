@@ -1,5 +1,5 @@
 const type = {
-    'GET_BASE_API': 'getMineBaseApi',
+    'GET_CATEGORY_API': 'getMineBaseApi',
 }
 
 export default type

@@ -150,7 +150,7 @@ export default {
 		})
 	},
 	created() {
-		this.$store.dispatch('getMineBaseApi');
+		this.$store.dispatch('getCategoryApi');
 	}
 }
 </script>

@@ -81,7 +81,7 @@ async function fetch(url, params, method = 'GET') {
 }
 
 export default {
-    mineBaseMsgApi() {
+    mineCategoryApi() {
         console.log('进入api.js')
         return fetch(`${api}/website/categoryList`, 'GET')
     }

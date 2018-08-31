@@ -9,12 +9,12 @@ import fetch from '~/service'
 import types from '~/service/type'
 
 const actions = {
-    getMineBaseApi({commit}) {
-        fetch.mineBaseMsgApi()
+    getCategoryApi({commit}) {
+        fetch.mineCategoryApi()
         .then(res => {
             console.log('action调用封装后的axios成功')
             console.log(res)
-            commit(types.GET_BASE_API, res)
+            commit(types.GET_CATEGORY_API, res)
         })
         console.log('进入action')
     }
