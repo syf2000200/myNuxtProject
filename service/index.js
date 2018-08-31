@@ -49,32 +49,31 @@ async function fetch(url, params, method = 'GET') {
     return new Promise((resolve, reject) => {
         if(method == 'GET') {
             service({
-                method: 'get', 
+                method: 'get',
                 url,
                 params,
             })
             .then(res => {
-                loading.close();
+                loading.close()
                 resolve(res)
             })
             .catch((error) => {
-                loading.close();
+                loading.close()
                 reject(error)
             })
-            
         }
         if(method == 'POST') {
             service({
-                method: 'post', 
+                method: 'post',
                 url,
                 params,
             })
             .then(res => {
-                loading.close();
+                loading.close()
                 resolve(res)
             })
             .catch((error) => {
-                loading.close();
+                loading.close()
                 reject(error)
             })
         }
