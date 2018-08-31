@@ -8,8 +8,9 @@
 import axios from 'axios'
 import qs from 'qs'
 import config from './config'
-const api = '/api'
+import { Loading } from 'element-ui'
 
+const api = '/api'
 const service = axios.create(config)
 
 // 判断是路由跳转还是 axios 请求
@@ -38,7 +39,13 @@ service.interceptors.response.use(
     }
 )
 
-export function fetch(url, params, method = 'GET') {
+async function fetch(url, params, method = 'GET') {
+    const loading = Loading.service({
+        lock: true,
+        text: 'Loading',
+        spinner: 'el-icon-loading',
+        background: 'rgba(0, 0, 0, 0.7)'
+    });
     return new Promise((resolve, reject) => {
         if(method == 'GET') {
             service({
@@ -46,11 +53,29 @@ export function fetch(url, params, method = 'GET') {
                 url,
                 params,
             })
-        } else {
+            .then(res => {
+                loading.close();
+                resolve(res)
+            })
+            .catch((error) => {
+                loading.close();
+                reject(error)
+            })
+            
+        }
+        if(method == 'POST') {
             service({
                 method: 'post', 
                 url,
                 params,
+            })
+            .then(res => {
+                loading.close();
+                resolve(res)
+            })
+            .catch((error) => {
+                loading.close();
+                reject(error)
             })
         }
     })

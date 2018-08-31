@@ -6,6 +6,7 @@
  */
 
 const state = {
+    loading: false,
     isLogin: false,
     getMineBaseMsg: null,
 }

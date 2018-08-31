@@ -46,7 +46,6 @@
         },
         created() {
             this.$store.dispatch('getMineBaseApi');
-            console.log('123', this.$store.state.Common.getMineBaseMsg)
         }
     }
 </script>

@@ -13,10 +13,11 @@ const actions = {
         fetch.mineBaseMsgApi()
         .then(res => {
             console.log('action调用封装后的axios成功')
+            console.log(res)
             commit(types.GET_BASE_API, res)
         })
         console.log('进入action')
     }
 }
 
- export default actions
+export default actions

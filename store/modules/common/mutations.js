@@ -8,13 +8,13 @@
 import types from '~/service/type'
 
 const mutations = {
-    [types.GET_BASE_API](state, res) {
+    [types.GET_BASE_API]: (state, res) => {
         console.log('进入mutation')
         state.getMineBaseMsg = {
             ...state.getMineBaseMsg,
-            msg: res.data.msg,
+            msg: res,
         }
-        console.log('进入mutations修改state成功')
+        console.log('进入mutations修改state成功', state, res)
     }
 }
 

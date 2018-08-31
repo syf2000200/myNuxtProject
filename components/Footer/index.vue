@@ -34,5 +34,7 @@
 
 <script>
     import './style.css'
+
+    export default {}
 </script>
 

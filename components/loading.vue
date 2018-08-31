@@ -5,17 +5,13 @@
 </template>
 
 <script>
+    import { mapState } from 'vuex'
+
     export default {
-        data: () => ({
-            loading: false
-        }),
-        methods: {
-            start () {
-                this.loading = true
-            },
-            finish () {
-                this.loading = false
-            }
+        computed: {
+            ...mapState({
+                loading: state => state.Common.loading
+            })
         }
     }
 </script>
@@ -32,5 +28,6 @@
         padding-top: 200px;
         font-size: 30px;
         font-family: sans-serif;
+        z-index: 9999;
     }
 </style>
