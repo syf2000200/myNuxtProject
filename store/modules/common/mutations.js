@@ -5,7 +5,7 @@
  *  @param:
  */
 
- import types from '~/service/type'
+import types from '~/service/type'
 
 const mutations = {
     [types.GET_BASE_API](state, res) {

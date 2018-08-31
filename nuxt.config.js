@@ -45,8 +45,11 @@ module.exports = {
 	
 	// // some nuxt config...
 	css: [
-		'~assets/css/main.css',
-		'element-ui/lib/theme-chalk/index.css'
+		{
+			src: '~assets/css/main.sass',
+			lang: 'less',
+		},
+		'element-ui/lib/theme-chalk/index.css',
 	],
 	modules: [
 		'@nuxtjs/axios',

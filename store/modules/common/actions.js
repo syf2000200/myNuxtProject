@@ -5,9 +5,10 @@
  *  @param:
  */
 
- import fetch from '~/service'
+import fetch from '~/service'
+import types from '~/service/type'
 
- const actions = {
+const actions = {
     getMineBaseApi({commit}) {
         fetch.mineBaseMsgApi()
         .then(res => {
@@ -16,6 +17,6 @@
         })
         console.log('进入action')
     }
- }
+}
 
  export default actions

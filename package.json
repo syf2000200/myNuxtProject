@@ -16,6 +16,8 @@
     "ajv": "^6.5.3",
     "axios": "^0.18.0",
     "element-ui": "^2.4.6",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
     "nuxt": "^1.0.0",
     "vue-awesome-swiper": "^3.1.3"
   },

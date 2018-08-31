@@ -7,8 +7,8 @@
 
 import Vue from 'vue'
 import Vuex from 'vuex'
-import Common from './modules/common'
-import Home from './modules/home'
+import Common from './modules/Common'
+import Home from './modules/Home'
 
 Vue.use(Vuex)
 
