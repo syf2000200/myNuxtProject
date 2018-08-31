@@ -148,6 +148,9 @@ export default {
 			toolsData: state => state.Home.toolsData,
 			stackData: state => state.Home.stackData,
 		})
+	},
+	created() {
+		this.$store.dispatch('getMineBaseApi');
 	}
 }
 </script>

@@ -6,23 +6,7 @@
  */
 
 const state = {
-    menuData: [
-        {
-            text: '前沿 / 区块链 / 人工智能',
-        },
-        {
-            text: '前端 / 小程序 / JS',
-        },
-        {
-            text: '后端 / JAVA / Python',
-        },
-        {
-            text: '移动 / Android / iOS',
-        },
-        {
-            text: '云计算 / 大数据 / 容器',
-        },
-    ],
+    menuData: null,
     bannerData: [
         {
             imgUrl: 'images/index/banner01.jpg',

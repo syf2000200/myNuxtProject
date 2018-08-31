@@ -5,10 +5,14 @@
  *  @param:
  */
 
+import types from '~/service/type'
+
 const mutations = {
-    increment (state) {
-        // state.isLogin = false
+    [types.GET_BASE_API]: (state, res) => {
+        console.log('进入mutation')
+        state.menuData = res.data.videoList
+        console.log('进入mutations修改state成功')
+        console.log(state.menuData)
     }
 }
-
 export default mutations

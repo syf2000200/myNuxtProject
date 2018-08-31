@@ -5,9 +5,6 @@
  *  @param:
  */
 
-import types from '~/service/type'
-
-const mutations = {
+const getters = {
+  getMineBaseMsg: state => state.getMineBaseMsg
 }
-
-export default mutations

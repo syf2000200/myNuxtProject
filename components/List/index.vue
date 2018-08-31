@@ -42,10 +42,6 @@
             ...mapState({
                 listData: state => state.Home.listData,
             }),
-            ...mapGetters(['getMineBaseMsg'])
         },
-        created() {
-            this.$store.dispatch('getMineBaseApi');
-        }
     }
 </script>
