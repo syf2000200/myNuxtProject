@@ -46,7 +46,7 @@ module.exports = {
 	// // some nuxt config...
 	css: [
 		{
-			src: '~assets/css/main.sass',
+			src: '~assets/css/main.less',
 			lang: 'less',
 		},
 		'element-ui/lib/theme-chalk/index.css',

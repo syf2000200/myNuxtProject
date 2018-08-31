@@ -59,6 +59,6 @@ export function fetch(url, params, method = 'GET') {
 export default {
     mineBaseMsgApi() {
         console.log('进入api.js')
-        return fetch(`${api}/video/searchConditionList`)
+        return fetch(`${api}/video/videoList`, {currentPage: 1, pageSize: 10}, 'POST')
     }
 }
