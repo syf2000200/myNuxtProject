@@ -13,6 +13,12 @@ const mutations = {
         state.menuData = res.data.categoryList
         console.log('进入mutations修改state成功')
         console.log(state.menuData)
+    },
+    [types.GET_LIST_API]: (state, res) => {
+        console.log('进入mutation')
+        state.listData = res.data.websiteList
+        console.log('进入mutations修改state成功')
+        console.log(state.menuData)
     }
 }
 export default mutations

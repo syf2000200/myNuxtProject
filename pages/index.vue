@@ -150,7 +150,8 @@ export default {
 		})
 	},
 	created() {
-		this.$store.dispatch('getCategoryApi');
+		this.$store.dispatch('getCategoryApi', {currentPage: 1, pageSize: 10})
+		this.$store.dispatch('getListApi', {currentPage: 1, pageSize: 10})
 	}
 }
 </script>

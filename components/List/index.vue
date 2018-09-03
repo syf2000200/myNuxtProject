@@ -8,18 +8,17 @@
                 <div class="course-card-top hashadow">
                     <img class="course-banner" :src="item.imgUrl" alt="">
                     <div class="course-label">
-                    <label for="">Vue.js</label>
+                    <label for="">{{ item.categoryName }}</label>
                     </div>
                 </div>
                 <div class="course-card-content">
-                    <h3 class="course-card-name">{{ item.text }}</h3>
+                    <h3 class="course-card-name">{{ item.describe }}</h3>
                     <div class="course-card-bottom">
                         <div class="course-card-info">
-                            <span>{{ item.type }}</span>
-                            <span>{{ item.level }}</span>
-                            <span><i class="icon-set_sns"></i>{{ item.num }}</span>
+                            <span>{{ item.name }}</span>
+                            <span><i class="icon-set_sns"></i>{{ item.websiteUrl }}</span>
                             <span class="course-star-box">
-                                <Rate :value="item.rateValue"/>
+                                <Rate :value="4"/>
                             </span>
                         </div>
                     </div>

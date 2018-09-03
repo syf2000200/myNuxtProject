@@ -18,53 +18,7 @@ const state = {
             imgUrl: 'images/index/banner03.jpg',
         }
     ],
-    listData: [
-        {
-            text: 'Vue2.5开发去哪儿网App 从零基础入门到实战项目',
-            type: '实战',
-            level: '中级',
-            num: 500000,
-            isNew: true,
-            imgUrl: 'images/index/item01-01.jpg',
-            rateValue: 3.6,
-        },
-        {
-            text: 'java设计模式精讲  Debug 方式+内存分析 ',
-            type: '进阶',
-            level: '初级',
-            num: 5000,
-            isNew: true,
-            imgUrl: 'images/index/item02-01.jpg',
-            rateValue: 2.6,
-        },
-        {
-            text: '玩转数据结构 从入门到进阶',
-            type: '进阶',
-            level: '中级',
-            num: 30000,
-            isNew: false,
-            imgUrl: 'images/index/item03-01.jpg',
-            rateValue: 5,
-        },
-        {
-            text: 'NLP 实践 TensorFlow 打造聊天机器人',
-            type: '实战',
-            level: '高级',
-            num: 900000,
-            isNew: false,
-            imgUrl: 'images/index/item02-01.jpg',
-            rateValue: 4,
-        },
-        {
-            text: '全网最热Python3入门+进阶 更快上手实际开发',
-            type: '基础',
-            level: '初级',
-            num: 989999,
-            isNew: true,
-            imgUrl: 'images/index/item03-01.jpg',
-            rateValue: 1.6,
-        }
-    ],
+    listData: null,
     topData: [
         {
             key: 0,

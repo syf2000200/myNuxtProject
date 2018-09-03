@@ -81,8 +81,12 @@ async function fetch(url, params, method = 'GET') {
 }
 
 export default {
-    mineCategoryApi() {
-        console.log('进入api.js')
-        return fetch(`${api}/website/categoryList`, 'GET')
+    mineCategoryApi(params) {
+        console.log('进入mineCategoryApi.js')
+        return fetch(`${api}/website/categoryList`, params, 'POST')
+    },
+    mineListApi(params) {
+        console.log('进入mineListApi.js')
+        return fetch(`${api}/website/websiteList`, params, 'POST')
     }
 }

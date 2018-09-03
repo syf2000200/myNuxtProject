@@ -1,6 +1,6 @@
 <template>
     <div class="menuContent">
-        <div class="item" v-for="(item, index) in menuData" :key="index">
+        <div class="item" v-for="(item, index) in this.$store.state.Home.menuData" :key="index">
             <span class="group">
                 <nuxt-link to="/category">{{ item.name }}</nuxt-link>
             </span>
