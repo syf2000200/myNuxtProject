@@ -27,7 +27,7 @@
 
 
 <script>
-    import './style.css'
+    import './style.less'
 
     export default {}
 </script>

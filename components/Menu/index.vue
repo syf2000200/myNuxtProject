@@ -10,7 +10,7 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
-import './style.css'
+import './style.less'
 
 export default {
     computed: {

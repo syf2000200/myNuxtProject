@@ -6,9 +6,9 @@
 </template>
 
 <script>
-    import './style.css'
+import './style.less'
 
-    export default {
-        props: ['value'],
-    }
+export default {
+    props: ['value'],
+}
 </script>

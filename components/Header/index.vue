@@ -1,16 +1,10 @@
 <template>
   <div class="Header">
+		<!-- LOGO -->
     <Logo/>
-    <nav>
-		<ul>
-			<li><a href="http://">免费课程</a></li>
-			<li><a href="http://">职业路径</a></li>
-			<li><a href="http://">实战</a></li>
-			<li><a href="http://">猿问</a></li>
-			<li><a href="http://">手记</a></li>
-			<li><a href="http://">找工作</a></li>
-		</ul>
-    </nav>
+		<!-- NAV -->
+    <Nav/>
+		<!-- SEARCH -->
     <Search/>
     <div class="login-area">
 		<ul>
@@ -25,13 +19,15 @@
 
 <script>
 import Logo from '~/components/Logo'
+import Nav from '~/components/Nav'
 import Search from '~/components/Search'
 import LoginLayerFrame from '~/components/LoginLayerFrame'
-import './style.css'
+import './style.less'
 
 export default {
 	components: {
 		Logo,
+		Nav,
 		Search,
 		LoginLayerFrame,
 	}

@@ -41,7 +41,7 @@
 <script>
     import Menu from '~/components/Menu'
     import SlideBanner from '~/components/SlideBanner'
-    import './style.css'
+    import './style.less'
 
     export default {
       components: {

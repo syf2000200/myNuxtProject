@@ -47,7 +47,7 @@
  *  @param:
  */
 
-import './style.css'
+import './style.less'
 
 export default {
     data() {

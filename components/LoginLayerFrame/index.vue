@@ -3,20 +3,20 @@
 </template>
 
 <script>
-    import './style.css'
-    import Tabs from '~/components/Tabs'
+import Tabs from '~/components/Tabs'
+import './style.less'
 
-    export default {
-        components: {
-            Tabs
-        },
-        methods: {
-            openLayer () {
-                this.$alert(<Tabs/>, '', {
-                    dangerouslyUseHTMLString: true,
-                    showConfirmButton: false,
-                });
-            }
+export default {
+    components: {
+        Tabs
+    },
+    methods: {
+        openLayer () {
+            this.$alert(<Tabs/>, '', {
+                dangerouslyUseHTMLString: true,
+                showConfirmButton: false,
+            });
         }
     }
+}
 </script>

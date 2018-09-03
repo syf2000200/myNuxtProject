@@ -11,14 +11,14 @@
 </template>
 
 <script>
-    import { mapState, mapMutations } from 'vuex'
-    import './style.css'
+import { mapState, mapMutations } from 'vuex'
+import './style.less'
 
-    export default {
-        computed: {
-            ...mapState({
-                bannerData: state => state.Home.bannerData
-            })
-        }
+export default {
+    computed: {
+        ...mapState({
+            bannerData: state => state.Home.bannerData
+        })
     }
+}
 </script>

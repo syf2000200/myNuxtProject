@@ -32,7 +32,7 @@
 <script>
     import { mapState, mapMutations, mapGetters } from 'vuex'
     import Rate from '~/components/Rate'
-    import './style.css'
+    import './style.less'
 
     export default {
         components: {
