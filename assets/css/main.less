@@ -80,3 +80,11 @@ a:link, a:visited {
 a, button, input {
     outline: 0;
 }
+
+/* router路由过渡效果 */
+.page-enter-active, .page-leave-active {
+    transition: opacity .5s;
+}
+.page-enter, .page-leave-active {
+    opacity: 0;
+}
