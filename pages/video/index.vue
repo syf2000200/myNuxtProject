@@ -6,10 +6,13 @@
             <div class="warp">
                 <div class="video-warp">
                     <!-- video播放器 -->
-                    <Video/>
+                    <Video
+                        :playsinline="playsinline"
+                        :playerOptions="playerOptions"
+                    />
                     <!-- 章节列表 -->
                     <div class="video-panel">
-                        <div class="video-panel-warp">
+                        <div class="video-panel-warp" :style="{ height: videoHeight + 'px', overflowY: 'scroll' }">
                             <div class="panel-container">
                                 <h1>2-1 Premiere-创建项目&导入素材</h1>
                                 <div class="v-teachers clearfix">
@@ -74,5 +77,30 @@ export default {
         Footer,
         Video,
     },
+    data () {
+        return {
+            videoHeight: 596,
+            playsinline: true,
+            // 播放器配置项
+            playerOptions: {
+                muted: true,
+                language: 'en',
+                playbackRates: [0.7, 1.0, 1.5, 2.0],
+                sources: [{
+                    type: "video/mp4",
+                    src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
+                }],
+                // poster: "/static/images/author.jpg",
+            }
+        }
+    },
+    mounted() {
+        this.playVideo();
+    },
+    methods: {
+        playVideo: () => {
+            console.log(Video)
+        }
+    }
 }
 </script>
