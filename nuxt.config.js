@@ -40,6 +40,10 @@ module.exports = {
 		{
 			src: '~plugins/ElementUI',
 			ssr: true,
+		},
+		{
+			src: '~plugins/nuxt-video-player-plugin.js',
+			ssr: false,
 		}
 	],
 	
@@ -50,6 +54,7 @@ module.exports = {
 			lang: 'less',
 		},
 		'element-ui/lib/theme-chalk/index.css',
+		'video.js/dist/video-js.css',
 	],
 	modules: [
 		'@nuxtjs/axios',
