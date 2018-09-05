@@ -2,7 +2,7 @@
     <section class="container">
         <!-- HEADER -->
         <Header/>
-        <div class="main" id="main">
+        <div class="main" id="Category">
             <List/>
         </div>
         <!-- FOOTER -->
@@ -16,7 +16,7 @@ import Header from '~/components/Header'
 import Footer from '~/components/Footer'
 import Topbar from '~/components/Topbar'
 import List from '~/components/List'
-import './style.css'
+import './style.less'
 
 export default {
   components: {

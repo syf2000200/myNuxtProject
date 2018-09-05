@@ -1,7 +1,7 @@
 <template>
     <div class="types-content clearfix">
         <div class="index-card-container course-card-container container" v-for="(item, index) in listData" :key="index">
-            <a href="" class="course-card">
+            <nuxt-link to="/video" class="course-card">
                 <div class="course-stat new" v-if="item.isNew">
                     NEW
                 </div>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </div>
-            </a>
+            </nuxt-link>
         </div>
     </div>
 </template>

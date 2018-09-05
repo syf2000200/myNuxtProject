@@ -2,7 +2,7 @@
 	<section class="container">
 		<!-- HEADER -->
 		<Header/>
-		<div class="main" id="main">
+		<div class="main" id="Home">
 			<!-- BANNER -->
 			<Banner/>
 			<!-- 实战推荐 -->
@@ -132,7 +132,7 @@ import Footer from '~/components/Footer'
 import Banner from '~/components/Banner'
 import Topbar from '~/components/Topbar'
 import List from '~/components/List'
-import './style.css'
+import './style.less'
 
 export default {
 	components: {
