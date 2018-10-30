@@ -6,7 +6,8 @@
  */
 
 const state = {
-    isLogin: false,
+  isLogin: false,
+  user: null,
 }
 
 export default state

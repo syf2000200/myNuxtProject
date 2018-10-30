@@ -3,7 +3,7 @@ module.exports = {
 	** Headers of the page
 	*/
 	head: {
-		title: '123',
+		title: '广联达大前端中心',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,7 +16,10 @@ module.exports = {
 	/*
 	** Customize the progress bar color
 	*/
-	loading: './components/loading.vue',
+	loading: {
+		color: '#0175fd',
+		height: '3px'
+	},
 	/*
 	** Build configuration
 	*/
@@ -44,17 +47,45 @@ module.exports = {
 		{
 			src: '~plugins/nuxt-video-player-plugin.js',
 			ssr: false,
+		},
+		{
+
+			src: '~plugins/localStorage',
+			ssr: false,
 		}
 	],
-	
+
 	// // some nuxt config...
 	css: [
+		//全局css
 		{
 			src: '~assets/css/main.less',
 			lang: 'less',
 		},
+		//iconfont字体配置
+		{
+			src: '~static/iconfont/iconfont.css',
+			lang: 'css',
+		},
+		//elementUI配置
 		'element-ui/lib/theme-chalk/index.css',
+		//videoJS配置
 		'video.js/dist/video-js.css',
+		//首页
+		{
+			src: '~assets/css/home-page.less',
+			lang: 'less',
+		},
+		//列表页
+		{
+			src: '~assets/css/category-page.less',
+			lang: 'less',
+		},
+		//视频播放页
+		{
+			src: '~assets/css/video-page.less',
+			lang: 'less',
+		},
 	],
 	modules: [
 		'@nuxtjs/axios',
@@ -65,8 +96,8 @@ module.exports = {
 	},
 	proxy: {
 		'/api': {
-		  	target: 'http://10.1.72.79:18080',
+		  	target: 'http://10.1.83.101:18080',
 		}
-	}
+	},
 }
 

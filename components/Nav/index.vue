@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import './style.less'
+import '~/assets/css/nav-components.less'
 
 export default {}
 </script>

@@ -6,7 +6,11 @@
  */
 
 const state = {
+    isLogin: false,
     menuData: null,
+    listData: null,
+    videoDetailData: null,
+    bannerIndex: 0,
     bannerData: [
         {
             imgUrl: 'images/index/banner01.jpg',
@@ -18,7 +22,6 @@ const state = {
             imgUrl: 'images/index/banner03.jpg',
         }
     ],
-    listData: null,
     topData: [
         {
             key: 0,

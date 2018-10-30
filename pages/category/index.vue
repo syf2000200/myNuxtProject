@@ -16,14 +16,13 @@ import Header from '~/components/Header'
 import Footer from '~/components/Footer'
 import Topbar from '~/components/Topbar'
 import List from '~/components/List'
-import './style.less'
 
 export default {
-  components: {
-    Header,
-    Footer,
-    Topbar,
-    List,
-  }
+    components: {
+        Header,
+        Footer,
+        Topbar,
+        List,
+    }
 }
 </script>

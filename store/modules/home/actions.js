@@ -5,29 +5,31 @@
  *  @param:
  */
 
-import fetch from '~/service'
+import fetch from '~/service/service'
 import types from '~/service/type'
 
 const actions = {
     //获取分类action
-    getCategoryApi({commit}, params) {
-        fetch.mineCategoryApi(params)
+    getCategoryApi: ({commit}) => {
+        fetch.mineCategoryApi()
         .then(res => {
-            console.log('action调用封装后的axios成功')
-            console.log(res)
             commit(types.GET_CATEGORY_API, res)
         })
-        console.log('进入action')
     },
-    //获取视频列表action
-    getListApi({commit}, params) {
+    //获取网站列表action
+    getListApi: ({commit}, params) => {
         fetch.mineListApi(params)
         .then(res => {
-            console.log('action调用封装后的axios成功')
-            console.log(res)
             commit(types.GET_LIST_API, res)
         })
-    }
+    },
+    //获取视频详情action
+    getVideoDetailApi: ({commit}, params) => {
+        fetch.mineVideoDetailApi(params)
+        .then(res => {
+            commit(types.GET_VIDEODETAIL_API, res)
+        })
+    },
 }
 
 export default actions

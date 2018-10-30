@@ -1,13 +1,11 @@
 <template>
     <div id="logo" class="logo">
         <nuxt-link to="/">
-            <img title="慕课网" src="~static/images/index/logo.png">
+            <img title="慕课网" src="~static/images/logo.jpg">
         </nuxt-link>
     </div>
 </template>
 
 <script>
-import './style.less'
-
 export default {}
 </script>

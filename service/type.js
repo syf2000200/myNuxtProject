@@ -1,6 +1,9 @@
 const type = {
-    'GET_CATEGORY_API': 'getMineCategoryApi',
-    'GET_LIST_API': 'getMineListApi',
+    GET_CATEGORY_API: 'GET_CATEGORY_API',
+    GET_LIST_API: 'GET_LIST_API',
+    GET_VIDEOLIST_API: 'GET_VIDEOLIST_API',
+    GET_VIDEODETAIL_API: 'GET_VIDEODETAIL_API',
+    GET_BANNER_URI: 'GET_BANNER_URI',
 }
 
 export default type

@@ -2,7 +2,13 @@
 	<section class="container">
 		<!-- HEADER -->
 		<Header/>
-		<div class="main" id="Home">
+		<div class="main" id="Home">	
+			<div class="bk" :style="{
+				backgroundImage: 'url('+ this.$store.state.Home.bannerData[bannerIndex].imgUrl +')',
+				backgroundRepeat: 'no-repeat',
+				backgroundPosition: 'center top',
+				backgroundSize: '100%',
+			}"></div>
 			<!-- BANNER -->
 			<Banner/>
 			<!-- 实战推荐 -->
@@ -12,7 +18,7 @@
 						<em>实</em>／<em>战</em>／<em>推</em>／<em>荐</em>
 						<span class="tit-icon icon-shizhan-r tit-icon-r"></span>
 					</h3>
-					<List/>
+					<List />
 				</div>
 			</div>
 			<!-- 技术头条 -->
@@ -38,7 +44,7 @@
 										<p class="lead-item-tit">{{ item.url }}</p>
 									</div>
 									<div class="lead-item-praise">
-										<s></s>
+										<i class="iconfont icon-dianzan1"></i>
 										<span>2365</span>
 									</div>
 								</div>
@@ -82,13 +88,15 @@
 					<div class="types-content clearfix">
 						<dl>
 							<dd v-for="(item, index) in stackData" :key="index">
-								<div class="warp">
-									<div>
-										<img :src="item.imgUrl" alt="">
+								<a :href="item.websiteUrl">
+									<div class="warp">
+										<div>
+											<img :src="item.imgUrl" alt="">
+										</div>
+										<p><b>{{ item.name }}</b></p>
+										<p>{{ item.describe }}</p>
 									</div>
-									<p><b>{{ item.title }}</b></p>
-									<p>{{ item.text }}</p>
-								</div>
+								</a>
 							</dd>
 						</dl>
 					</div>
@@ -132,7 +140,6 @@ import Footer from '~/components/Footer'
 import Banner from '~/components/Banner'
 import Topbar from '~/components/Topbar'
 import List from '~/components/List'
-import './style.less'
 
 export default {
 	components: {
@@ -144,9 +151,11 @@ export default {
 	},
 	computed: {
 		...mapState({
+			listData: state => state.Home.listData,
 			topData: state => state.Home.topData,
 			toolsData: state => state.Home.toolsData,
-			stackData: state => state.Home.stackData,
+			stackData: state => state.Home.listData,
+			bannerIndex: state => state.Home.bannerIndex,
 		})
 	},
 	created() {

@@ -1,3 +1,9 @@
+@import url('header-components.less');
+@import url('footer-components.less');
+@import url('search-components.less');
+@import url('banner-components.less');
+@import url('video-list-components.less');
+@import url('topbar-components.less');
 html{
     font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;    word-spacing: 1px;
     line-height: 20px;
@@ -47,6 +53,9 @@ html{
   background-color: #35495e;
 }
 
+img{
+    display: block;
+}
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
     font-weight: 400;
@@ -58,6 +67,7 @@ section.container {
 }
 ol,ul,li{
     list-style: none;
+    padding: 0;
 }
 a{
     text-decoration: none;
@@ -94,7 +104,12 @@ a, button, input {
     display: block;
     padding: 0;
     min-height: 750px;
+    position: relative;
 }
-.main>.bgfff {
-    box-shadow: 0 2px 8px 0 rgba(7,17,27,.06);
+.main>.bk{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    filter: blur(100px);
 }

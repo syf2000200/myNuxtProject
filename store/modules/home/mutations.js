@@ -8,17 +8,21 @@
 import types from '~/service/type'
 
 const mutations = {
+    //获取分类mutations
     [types.GET_CATEGORY_API]: (state, res) => {
-        console.log('进入mutation')
-        state.menuData = res.data.categoryList
-        console.log('进入mutations修改state成功')
-        console.log(state.menuData)
+        state.menuData = res.data.directionList
     },
+    //获取网站列表mutations
     [types.GET_LIST_API]: (state, res) => {
-        console.log('进入mutation')
         state.listData = res.data.websiteList
-        console.log('进入mutations修改state成功')
-        console.log(state.menuData)
-    }
+    },
+    //获取视频详情mutations
+    [types.GET_VIDEODETAIL_API]: (state, res) => {
+        state.videoDetailData = res.data.videoDetail
+    },
+    //获取banner图片
+    [types.GET_BANNER_URI]: (state, res) => {
+        state.bannerIndex = res
+    },
 }
 export default mutations
